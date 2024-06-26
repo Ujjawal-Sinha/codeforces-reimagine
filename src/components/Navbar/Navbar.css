@@ -33,7 +33,6 @@
 }
 
 .login-btn{
-    margin-right: 2.5rem;
     padding: 0.5rem 1.5rem;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
@@ -44,5 +43,11 @@
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    transition: transform 0.2s ease;
     
+}
+
+.login-btn:hover{
+    transform: scale(1.05);
+
 }

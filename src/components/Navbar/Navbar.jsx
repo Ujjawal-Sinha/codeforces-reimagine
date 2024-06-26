@@ -6,7 +6,9 @@ export const Navbar = () => {
   return (
     <>
       <div className="Navbar-container">
-        <img className="logo" src={codeforceslogo} alt="Codeforces_Logo" />
+        <a href="/">
+          <img className="logo" src={codeforceslogo} alt="Codeforces_Logo" />
+        </a>
 
         <img className="india-flag" src={indiaflag} alt="India_Flag" />
         <button className="login-btn">Login/Register</button>

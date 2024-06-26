@@ -31,7 +31,12 @@
     height: 0.5rem;
 }
 
+.heading-option {
+    transition: transform 0.2s ease;
+}
+
 .heading-option:hover{
     cursor: pointer;
+    transform: scale(1.2);
 
 }
