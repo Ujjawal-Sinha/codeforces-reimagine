@@ -1,0 +1,37 @@
+.heading-container{
+    
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 0.4rem;
+    /* margin-top: 1rem; */
+    width: 93%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.heading-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding-left: 2rem; */
+}
+
+.heading-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 0.5rem;
+}
+
+.heading-option:hover{
+    cursor: pointer;
+
+}

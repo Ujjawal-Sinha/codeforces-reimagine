@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, Problem } from "./pages";
+import { Home, Problem, LoginSignup } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/problems" element={<Problem />} />
+        <Route path="/auth" element={<LoginSignup />} />
       </Routes>
     </>
   );

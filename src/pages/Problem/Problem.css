@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.problem {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.problem.red {
+    background-color: #fde0dc; 
+}
+
+.problem.blue {
+    background-color: #cde0f4;
+}
+
+.problem:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.02); 
+}
+
+.problem h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.problem:hover h2 {
+    color: #007bff; 
+}
+
+.problem p {
+    margin-bottom: 5px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.problem:hover p {
+    color: #555; 
+}
+
+.problem p.tags {
+    margin-bottom: 10px;
+}
+
+.problem p a {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.problem p a:hover {
+    background-color: #ccc;
+}
+
+.problem .rating {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff; 
+    position: relative;
+}
+
+.problem .rating::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%; 
+    height: 100%;
+    background-color: #007bff; 
+    z-index: -1;
+}

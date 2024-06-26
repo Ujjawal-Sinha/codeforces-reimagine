@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar-container{
+    padding-top: 0;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+    height: 3.7rem;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+}
+
+.logo{
+    padding-left: 2.5rem;
+    width: 16rem;
+    height: 2rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.india-flag{
+    height: 17px;
+    width: 20px;
+    margin-left: 49rem;
+    cursor:pointer;
+}
+
+.login-btn{
+    margin-right: 2.5rem;
+    padding: 0.5rem 1.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(125,162,255);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
