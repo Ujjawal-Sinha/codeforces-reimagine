@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
-import logo from './Codeforces_logo.svg.png';
+import logo from './Codeforces_logo.svg.png'; // Adjust the path if necessary
 
-const ProblemsetPage = () => {
+const Problem = () => {
   const [problems, setProblems] = useState([]);
 
   useEffect(() => {
@@ -76,4 +76,4 @@ const ProblemsetPage = () => {
   );
 };
 
-export default ProblemsetPage;
+export default Problem;
