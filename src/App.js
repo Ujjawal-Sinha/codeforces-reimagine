@@ -1,6 +1,7 @@
 import "./App.css";
 import { Home, Problem, LoginSignup } from "./pages";
 import { Routes, Route } from "react-router-dom";
+import Problem from "./Problem"; // Adjust the path if necessary
 
 function App() {
   return (
