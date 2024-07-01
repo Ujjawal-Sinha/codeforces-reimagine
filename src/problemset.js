@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
-import logo from './Codeforces_logo.svg.png'; // Assuming you have this image in the src directory
+import logo from './Codeforces_logo.svg.png';
 
 const ProblemsetPage = () => {
   const [problems, setProblems] = useState([]);
