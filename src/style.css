@@ -1,1 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b1b47;
+}
+
+header {
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+main#problemset {
+  flex: 1;
+  background-color: #2b4077;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.problem {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #97b1f8;
+}
+
+.problem:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.problem h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.problem:hover h2 {
+  color: #007bff;
+}
+
+.problem p {
+  margin-bottom: 5px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.problem:hover p {
+  color: #555;
+}
+
+.problem p.tags {
+  margin-bottom: 10px;
+  color: #d0d4f6;
+}
+
+.problem p a {
+  display: inline-block;
+  background-color: rgb(146, 177, 239);
+  color: #d0d4f6;
+  text-decoration: none;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.problem p a:hover {
+  background-color: #5e40e3;
+}
+
+.problem .rating {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007bff;
+  position: relative;
+}
+
+.problem .rating::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  z-index: -1;
+}
+
+.problem .difficulty {
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.problem .easy {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+.problem .moderate {
+  background-color: #c5e1a5;
+  color: #333;
+}
+
+.problem .difficult {
+  background-color: rgb(238, 238, 141);
+  color: #333;
+}
+
+.problem .unrated {
+  color: #333;
+}
 
